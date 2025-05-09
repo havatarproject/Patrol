@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        android:title=""
+        android:summary=""
+        android:layout="@layout/white_space_layout" />
+
+    <PreferenceCategory
+        app:key="sound_category"
+        app:title="Som">
+
+        <CheckBoxPreference
+            app:key="background_music"
+            app:title="Som de fundo"
+            android:defaultValue="true" />
+
+        <EditTextPreference
+            app:key="volume_level_intro"
+            app:title="Volume da voz de introdução"
+            app:summary="Nivel do volume da voz de introdução (0 a 1)"
+            android:inputType="numberDecimal"
+            android:defaultValue="0.5" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="location_category"
+        app:title="Preferências de localização.">
+
+        <EditTextPreference
+            app:key="stop_seconds_primary"
+            app:title="Segundos de paragem principal"
+            app:summary="Segundos parado numa localização principal."
+            android:inputType="number"
+            app:defaultValue="60"
+        />
+
+        <EditTextPreference
+            app:key="turn_seconds_first"
+            app:title="Segundos de paragem primeiro"
+            app:summary="Segundos de paragem no primeiro angulo de paragem secundária."
+            android:inputType='number'
+            app:defaultValue="10"
+            />
+
+        <EditTextPreference
+            app:key="turn_seconds_second"
+            app:title="Segundos de paragem segundo"
+            app:summary="Segundos de paragem no segundo angulo de paragem secundária."
+            android:inputType='number'
+            app:defaultValue="10"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="round_category"
+        app:title="Rondas">
+
+        <EditTextPreference
+            app:key="number_of_rounds"
+            app:title="Número de rondas"
+            app:summary="Número de rondas de patrulha por todas as localizações."
+            android:inputType='number'
+            app:defaultValue="5"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="questionnaire_category"
+        app:title="Questionário">
+
+        <EditTextPreference
+            app:key="inactivity_timeout"
+            app:title="Tempo esgotado"
+            app:summary="Número de segundos sem toque no ecrã, durante um questionário, até retomar patrulha."
+            android:inputType='number'
+            app:defaultValue="30"
+            />
+        <EditTextPreference
+            app:key="follow_up_seconds"
+            app:title="Segundos em modo de acompanhamento"
+            app:summary="Número de segundos em modo de acompanhamento, após o inicio do questionário."
+            android:inputType='number'
+            app:defaultValue="5"
+            />
+
+        <EditTextPreference
+            app:key="quizzes"
+            app:title="Website de questionários"
+            app:summary="Website de questionários"
+            android:inputType='textWebEditText'
+            app:defaultValue=""
+            />
+
+        <!-- Input URLs -->
+        <EditTextPreference
+            app:key="quizzes"
+            app:title="Website de questionários"
+            app:summary="Insira uma lista de URLs separada por vírgulas"
+            android:inputType="text"
+            app:defaultValue=""
+            />
+
+        <!-- Select URLs -->
+        <MultiSelectListPreference
+            app:key="selected_quizzes"
+            app:title="Selecione os Websites"
+            app:summary="Escolha um ou mais URLs para serem exibidos"
+            />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="tilt_angles"
+        app:title="Ângulos de inclinação">
+
+        <EditTextPreference
+            app:key="tilt_main_stop"
+            app:title="Ângulo de inclicação paragem principal"
+            app:summary="Ângulo de inclinação numa paragem principal, -25 a 55 graus."
+            android:inputType='number'
+            app:defaultValue="55"
+            />
+
+        <EditTextPreference
+            app:key="tilt_secondary_stop"
+            app:title="Ângulo de inclicação paragem secundária"
+            app:summary="Ângulo de inclinação numa paragem secundária, -25 a 55 graus."
+            android:inputType='number'
+            app:defaultValue="40"
+            />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:key="tiltby_angles"
+        app:title="Ângulos de viragem">
+
+        <EditTextPreference
+            app:key="turn_angle_first"
+            app:title="Primeiro ângulo de viragem"
+            app:summary="Primeiro ângulo de viragem numa paragem secundária, em graus."
+            android:inputType='number'
+            app:defaultValue="45"
+            />
+
+        <EditTextPreference
+            app:key="turn_angle_second"
+            app:title="Segundo ângulo de viragem"
+            app:summary="Segundo ângulo de viragem numa paragem secundária, em graus."
+            android:inputType='number'
+            app:defaultValue="-45"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:key="registry"
+        app:title="Ficheiro de registo">
+
+        <EditTextPreference
+            android:key="log_file"
+            android:title="Enviar ficheiro de registo"
+            android:summary="Envia ficheiro de registo para email pré-definido."
+            android:inputType='textEmailAddress'
+            android:defaultValue="" />
+
+    </PreferenceCategory>
+
+    <Preference
+        android:title=""
+        android:summary=""
+        android:layout="@layout/white_space_layout" />
+
+
+</PreferenceScreen>
+
+
+    <!--
+           <PreferenceCategory
+               app:key="intrusion_category"
+               app:title="Intrusão">
+
+               <Preference
+                   app:key="auto_detect"
+                   app:summary="Auto deteção de pessoas"
+                   app:title="Autodeteção"/>
+
+               <EditTextPreference
+                   app:key="stop_seconds_after_detect"
+                   app:title="Segundos de paragem após deteção"
+                   app:summary="Segundos parado após uma deteção positiva"
+                   android:inputType="number"
+                   app:defaultValue="10"
+                   />
+
+               <EditTextPreference
+                   app:key="seconds_detect"
+                   app:title="Segundos tentativa de deteção"
+                   app:summary="Segundos a tentar uma deteção"
+                   android:inputType="number"
+                   app:defaultValue="10"
+                   />
+
+           </PreferenceCategory>
+
+           <PreferenceCategory
+               app:key="help_category"
+               app:title="Help">
+
+               <Preference
+                   app:key="feedback"
+                   app:summary="Report technical issues or suggest new features"
+                   app:title="Send feedback"/>
+
+           </PreferenceCategory>
+       -->

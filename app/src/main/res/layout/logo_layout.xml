@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/luz_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/luz_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/hospital_da_luz_logo" />
+
+    <!--
+   <ImageView
+       android:id="@+id/isr_logo"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/isr_logo"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentEnd="true"
+       android:contentDescription="@string/isr_logo" />
+      -->
+</RelativeLayout>

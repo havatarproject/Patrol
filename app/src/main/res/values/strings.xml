@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Patrol App</string>
+    <string name="patrolling_on">A patrulhar</string>
+    <string name="voltar">Voltar</string>
+    <string name="toque_aqui">Ajude-nos a melhorar. Toque aqui!</string>
+    <string name="fim">Submeter</string>
+    <string name="segundos_restantes">Segundos restantes</string>
+    <string name="hospital_da_luz_logo">hospital da luz logo</string>
+    <string name="isr_logo">isr logo</string>
+    <string name="selecionar_localiza_es_de_patrulha">Selecionar localizações de patrulha</string>
+    <string name="definicoes">Definições</string>
+    <string name="fechar">Fechar</string>
+    <string name="patrulhar">Patrulhar</string>
+    <string name="menu_principal">Menu Principal</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="configura_o">Configuração</string>
+    <string name="not_selected">Not selected</string>
+    <string name="your_text">Your Text</string>
+    <string name="click_me">Click Me</string>
+    <string name="localiza_es_de_patrulha">Localizações de Patrulha</string>
+</resources>
